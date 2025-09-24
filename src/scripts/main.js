@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const heroSection = document.querySelector('.hero');
     const alturaHero = heroSection.clientHeight;
 
+
+    //Header
     window.addEventListener('scroll', function() {
         const posicaoAtual = window.scrollY;
 
@@ -33,16 +35,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 })
 
+//Header
 function ocultaElementosDoHeader() {
     const header = document.querySelector('header');
     header.classList.add('header--is-hidden');
 }
 
+//Header
 function exibeElementosDoHeader() {
     const header = document.querySelector('header');
     header.classList.remove('header--is-hidden');
 }
 
+//FAQ
 function abreOuFechaResposta(elemento) {
     const classe = 'faq__questions__item--is-open';
     const elementoPai = elemento.target.parentNode;
