@@ -55,6 +55,7 @@ function abreOuFechaResposta(elemento) {
     elementoPai.classList.toggle(classe);
 }
 
+//Hero
 function removeBotaoAtivo() {
     const buttons = document.querySelectorAll('[data-tab-button]');
 
@@ -63,6 +64,7 @@ function removeBotaoAtivo() {
     }
 }
 
+//Shows
 function escondeTodasAbas() {
     const tabsContainer = document.querySelectorAll('[data-tab-id]');
 
