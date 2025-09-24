@@ -27,22 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
 
-function removeBotaoAtivo() {
-    const buttons = document.querySelectorAll('[data-tab-button]');
-
-    for (let i = 0; i < buttons.length; i++) {
-        buttons[i].classList.remove('shows__tabs__button--is-active');
-    }
-}
-
-function escondeTodasAbas() {
-    const tabsContainer = document.querySelectorAll('[data-tab-id]');
-
-    for (let i = 0; i < tabsContainer.length; i++) {
-        tabsContainer[i].classList.remove('shows__list--is-active');
-    }
-}
-
     // Seção FAQ, accordion
     for (let i = 0; i < questions.length; i++) {
         questions[i].addEventListener('click', abreOuFechaResposta);
@@ -66,3 +50,18 @@ function abreOuFechaResposta(elemento) {
     elementoPai.classList.toggle(classe);
 }
 
+function removeBotaoAtivo() {
+    const buttons = document.querySelectorAll('[data-tab-button]');
+
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('shows__tabs__button--is-active');
+    }
+}
+
+function escondeTodasAbas() {
+    const tabsContainer = document.querySelectorAll('[data-tab-id]');
+
+    for (let i = 0; i < tabsContainer.length; i++) {
+        tabsContainer[i].classList.remove('shows__list--is-active');
+    }
+}
