@@ -57,6 +57,10 @@ body {
     @media (max-width: 768px) {
         @include text(14px);
     }
+
+    @media (max-width: 1023px) {
+    @include text(16px);
+    }
 }
 
 .text--small {
@@ -96,6 +100,11 @@ body {
         @include title(22px);
     }
 } 
+
+.questions {
+    @include title(16px);
+    font-weight: 700;
+}
 
 .button {
     display: flex;
