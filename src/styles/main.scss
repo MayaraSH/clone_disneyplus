@@ -70,7 +70,7 @@ body {
 .link-text {
     @include text(18px);
     color: variaveis.$corTextoSecundario;
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .title--big {
