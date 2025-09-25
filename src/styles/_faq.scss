@@ -28,6 +28,8 @@
                     display: flex;
                     align-items: center;
                     font-size: 40px;
+                    font-family: monospace;
+
                 }
             }
 
@@ -36,12 +38,23 @@
                 overflow: hidden;
                 padding: 0 24px;
                 transition: height, .5s ease;
+
+                &__li {
+                    list-style-type: disc; 
+                    margin-left: 40px;
+                    line-height: 40px;
+                }
+                a {
+                    font-size: 16px;
+                }
             }
+
+                
 
             &--is-open {
                 .faq__questions__item__question::after {
-                    content: '-';
-                }
+                    content:'-';       
+                    }
                 
                 .faq__questions__item__answer {
                     height: auto;
